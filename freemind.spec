@@ -71,8 +71,8 @@ update-mime-database %{_datadir}/mime ||:
 %files
 %defattr(644,root,root,755)
 %doc bin/dist/doc/freemind*
-%{_datadir}/%{name}
 %attr(755,root,root) %{_bindir}/%{name}
+%{_datadir}/%{name}
 %{_pixmapsdir}/%{name}.png
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_datadir}/mime/packages/*
