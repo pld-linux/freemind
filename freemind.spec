@@ -1,5 +1,5 @@
 Summary:	A free mind-mapping software
-Summary(pl):	Program do tworzenia map umys≥u
+Summary(pl.UTF-8):   Program do tworzenia map umys≈Çu
 Name:		freemind
 Version:	0.9.0
 %define		_rc Beta_8
@@ -24,11 +24,11 @@ FreeMind is an open source mind mapping software that enables you to
 visualize ideas, projects, concepts, brainstorming, research or any
 other task that can benefit from a structured overview.
 
-%description -l pl
-FreeMind jest otwartym programem do tworzenia map umys≥u
-umoøliwiaj±cym wizualne przedstawienie pomys≥Ûw, projektÛw, koncepcji,
-burzy mÛzgÛw, pracy naukowej czy dowolnego innego problemu, ktÛry
-mÛg≥by skorzystaÊ ze zorganizowanej formy prezentacji.
+%description -l pl.UTF-8
+FreeMind jest otwartym programem do tworzenia map umys≈Çu
+umo≈ºliwiajƒÖcym wizualne przedstawienie pomys≈Ç√≥w, projekt√≥w, koncepcji,
+burzy m√≥zg√≥w, pracy naukowej czy dowolnego innego problemu, kt√≥ry
+m√≥g≈Çby skorzystaƒá ze zorganizowanej formy prezentacji.
 
 %prep
 %setup -q -c
