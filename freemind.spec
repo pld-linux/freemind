@@ -1,5 +1,5 @@
 Summary:	A free mind-mapping software
-Summary(pl.UTF-8):   Program do tworzenia map umysłu
+Summary(pl.UTF-8):	Program do tworzenia map umysłu
 Name:		freemind
 Version:	0.9.0
 %define		_rc Beta_8
