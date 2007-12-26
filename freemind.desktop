@@ -1,12 +1,13 @@
 [Desktop Entry]
 Version=1.0
 Name=FreeMind
-Comment=
+Comment=A free mind mapping tool
+Comment[pl]=Program do tworzenia map umysłu
+GenericName=FreeMind
 Exec=/usr/bin/freemind
 Terminal=false
 Icon=/usr/share/pixmaps/freemind.png
 Type=Application
 MimeType=application/x-freemind;
 Categories=Utility;Office;Java;
-GenericName=FreeMind
-Comment=A free mind mapping tool
+# vi:encoding=utf-8
