@@ -2,12 +2,12 @@ Summary:	A free mind-mapping software
 Summary(pl.UTF-8):	Program do tworzenia map umysłu
 Name:		freemind
 Version:	0.9.0
-%define		_rc Beta_15
+%define		_rc Beta_16
 Release:	0.%{_rc}.1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://freemind.sourceforge.net/testversions/%{name}-src-%{version}_%{_rc}_icon_butterfly.tar.gz
-# Source0-md5:	127c6dc76cf58dc1aeff04cdb57d7b87
+Source0:	http://heanet.dl.sourceforge.net/freemind/%{name}-src-%{version}_%{_rc}.tar.gz
+# Source0-md5:	7aa46a8319152f3ee6a9ab059de7baa8
 Source1:	%{name}.desktop
 Source2:	%{name}.xml
 URL:		http://freemind.sourceforge.net/
