@@ -2,19 +2,20 @@ Summary:	A free mind-mapping software
 Summary(pl.UTF-8):	Program do tworzenia map umysłu
 Name:		freemind
 Version:	0.9.0
-%define		_rc Beta_16
+%define		_rc Beta_19
 Release:	0.%{_rc}.1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://heanet.dl.sourceforge.net/freemind/%{name}-src-%{version}_%{_rc}.tar.gz
-# Source0-md5:	7aa46a8319152f3ee6a9ab059de7baa8
+# Source0-md5:	9ea298574370fcb4fe08bec60dd26499
 Source1:	%{name}.desktop
 Source2:	%{name}.xml
 URL:		http://freemind.sourceforge.net/
-BuildRequires:	ant
-#BuildRequires:	ant-nodeps
+BuildRequires:	ant-apache-regexp
+BuildRequires:	ant-trax
 BuildRequires:	jdk >= 1.4
 BuildRequires:	sed >= 4.0
+Requires:	jre-X11
 Requires(post,postun):  desktop-file-utils
 Requires(post,postun):  shared-mime-info
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -47,7 +48,7 @@ install -d $RPM_BUILD_ROOT%{_pixmapsdir}
 install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 cp -a bin/dist $RPM_BUILD_ROOT%{_datadir}/%{name}
-rm $RPM_BUILD_ROOT%{_datadir}/%{name}/[Ff]reemind.*
+rm $RPM_BUILD_ROOT%{_datadir}/%{name}/[Ff]ree[Mm]ind.*
 rm $RPM_BUILD_ROOT%{_datadir}/%{name}/license
 rm -rf $RPM_BUILD_ROOT%{_datadir}/%{name}/doc
 cp -a bin/dist/%{name}.sh $RPM_BUILD_ROOT%{_bindir}/%{name}
