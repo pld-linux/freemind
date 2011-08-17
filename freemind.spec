@@ -33,11 +33,11 @@ mógłby skorzystać ze zorganizowanej formy prezentacji.
 
 %prep
 %setup -q -c
+mv %{name}/* .
+sed -i s,./doc/freemind.mm,%{_docdir}/freemind.mm, freemind.properties
 
 %build
-cd %{name}
-JAVA_HOME=%{java_home}
-sed -i s,./doc/freemind.mm,%{_docdir}/freemind.mm, freemind.properties
+#JAVA_HOME=%{java_home}
 %ant dist browser
 
 %install
